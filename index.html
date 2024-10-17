@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container p {
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+        .form-container select {
+            width: calc(50% - 12px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .form-container .designation {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-container .designation label {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+   <center> <h3><a href="index.html">Form 1</a></h3>
+    <h3><a href="task.html">Form 2</a></h3></center>
+
+    <div class="form-container">
+    <h2>Registration Form</h2>
+    <p>Of course, all submitted information is kept in the strictest confidence.<br>
+    You always retain control of your information with D. W. Simpson & Co.<br>
+    <strong>Our services are always at no cost to you.</strong></p>
+    
+    <form action="Thanks">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Address: <input type="text" name="address"></label><br>
+        <label>City: <input type="text" name="city"></label>
+        <label>State/Province: <input type="text" name="state"></label><br>
+        <label>Zip Code: <input type="text" name="zip"></label><br>
+        <label>Country: <input type="text" name="country"></label><br>
+        <label>Phone (H): <input type="tel" name="phone_home"></label>
+        <label>Fax: <input type="text" name="fax"></label><br>
+        <label>Phone (W): <input type="tel" name="phone_work"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Company Name: <input type="text" name="company" optional></label><br>
+        
+        <label>Desired Region:</label>
+        <select name="region">
+            <option value="other">Other</option>
+            <option value="1">pakistan</option>
+            <option value="2">India</option>
+            <option value="3">Bangladesh</option>
+            <option value="4">Turkey</option>
+            <option value="5">Iran</option>
+            <option value="6">Iraq</option>
+        </select>
+        <input type="text" name="region_other"><br>
+        
+        <p>Professional designations earned:</p>
+        <div class="designation">
+            <label><input type="checkbox" name="designation" value="College Student">College Student</label>
+            <label><input type="checkbox" name="designation" value="Actuarial Student">Actuarial Student</label>
+            <label><input type="checkbox" name="designation" value="ACAS">ACAS</label>
+            <label><input type="checkbox" name="designation" value="FCAS">FCAS</label>
+            <label><input type="checkbox" name="designation" value="ASA">ASA</label>
+            <label><input type="checkbox" name="designation" value="FSA">FSA</label>
+            <label><input type="checkbox" name="designation" value="EA">EA</label>
+            <label><input type="checkbox" name="designation" value="CFA">CFA</label>
+            <label><input type="checkbox" name="designation" value="MBA">MBA</label>
+            <label><input type="checkbox" name="designation" value="MAAA">MAAA</label>
+            <label><input type="checkbox" name="designation" value="FIA">FIA</label>
+            <label><input type="checkbox" name="designation" value="FCIA">FCIA</label>
+            <label><input type="checkbox" name="designation" value="FIAA">FIAA</label>
+            <label><input type="checkbox" name="designation" value="Financial Engineer">Financial Engineer</label>
+            <label><input type="checkbox" name="designation" value="M.S.">M.S.</label>
+            <label><input type="checkbox" name="designation" value="Ph.D.">Ph.D.</label>
+            <label><input type="checkbox" name="designation" value="Data Mining">Data Mining</label>
+            <label><input type="checkbox" name="designation" value="Quant">Quant</label>
+        </div>
+        
+        <label>Other Designations: <input type="text" name="other_designations"></label><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+```
+
+This HTML code creates a registration form with fields and checkboxes similar to the ones shown in the image. You can adjust the form styling and add more regions or professional designations as needed.

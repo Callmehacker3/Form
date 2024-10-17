@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #e0e0e0;
+        }
+        .form-container h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-container label {
+            display: inline-block;
+            width: 100px;
+            margin-top: 10px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container input[type="date"],
+        .form-container input[type="tel"],
+        .form-container textarea {
+            width: 150px;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container input[type="radio"] {
+            margin: 2px 10px 2px 10px;
+        }
+        .form-container .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .form-container input[type="submit"],
+        .form-container input[type="reset"] {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+   <center> <a href="index.html">Form 1</a></h3>
+    <a href="task.html">Form 2</a></h3></center>
+    
+<div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        
+        <label for="nickName">Nick Name:</label>
+        <input type="text" id="nickName" name="nickName"><br>
+        
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio"  id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Others">
+        <label for="other">Others</label>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile"><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" cols="20"></textarea><br>
+        
+        <div class="button-container">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
